@@ -1,5 +1,9 @@
 # LinguaNova
 
+###Install
+```python
+pip install lingua-nova
+```
 ###TODO
 
 - [X] Tạo pip install 
