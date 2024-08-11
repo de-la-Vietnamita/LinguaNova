@@ -5,11 +5,18 @@ import pkg_resources as pkg
 from setuptools import setup
 from setuptools import find_packages, setup
 
+
+
+
 # Settings
 FILE = Path(__file__).resolve()
 ROOT = FILE.parent  # root directory
 README = (ROOT / "README.md").read_text(encoding="utf-8")
-REQUIREMENTS = [f'{x.name}{x.specifier}' for x in pkg.parse_requirements((ROOT / 'requirements.txt').read_text())]
+REQUIREMENTS = [
+    "numpy>=1.23.0,<2.0.0",
+    "matplotlib>=3.3.0",
+]
+
 def get_version():
     file = ROOT / 'linguanova/__init__.py'
     return re.search(r'^__version__ = [\'"]([^\'"]*)[\'"]', file.read_text(), re.M)[1]
@@ -24,8 +31,8 @@ setup(
         'Source': 'https://github.com/de-la-Vietnamita/LinguaNova',},
     author="de-la-Vietnamita",
     author_email='ductq1801@gmail.com',
-    packages=['linguanova'],  # required
-    #packages=find_packages(),  # required
+    #packages=['linguanova'],  # required
+    packages=find_packages(),  # required
     include_package_data=True,
     install_requires=REQUIREMENTS,
     extras_require={
