@@ -24,8 +24,8 @@ setup(
         'Source': 'https://github.com/de-la-Vietnamita/LinguaNova',},
     author="de-la-Vietnamita",
     author_email='ductq1801@gmail.com',
-    packages=['lingua-nova'],  # required
-    packages=find_packages(),  # required
+    packages=['linguanova'],  # required
+    #packages=find_packages(),  # required
     include_package_data=True,
     install_requires=REQUIREMENTS,
     extras_require={
