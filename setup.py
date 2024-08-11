@@ -38,6 +38,6 @@ setup(
         "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10",
         "Topic :: Software Development", "Topic :: Scientific/Engineering",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
-        "Topic :: Scientific/Engineering :: Speech Processing", "Operating System :: POSIX :: Linux",
+        "Operating System :: POSIX :: Linux",
         "Operating System :: MacOS", "Operating System :: Microsoft :: Windows"],
     keywords="machine-learning, deep-learning, Speech, ML, DL, AI, LinguaNova")
